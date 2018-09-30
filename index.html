@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>QUIZ BOARD</title>
+
+</head>
+
+<body>
+    <div class="container">
+            <div class="jumbotron">
+                <h1>QUIZ BOARD</h1>
+                <P>This is an interactive webpage that asks, new students in Javasript,multiple choice questions 
+                        which are well structured to ensure the user gets a memorable and exciting exprience while learning at the same time!</P>
+            </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="jumbotron">
+            <form id="form">
+                <fieldset>
+                    <!--question 1-->
+                    <legend>JavaScript is interpreted by</legend>
+
+                    <div>
+                        <input type="radio" name="Q1" value="10">
+                        <label for="A1">Client</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Q1" value="0" />
+                        <label for="B1">Server</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Q1" value="0" />
+                        <label for="C1">Object</label>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <!--question 2-->
+                    <legend>Which of the following is the structure of an if statement?</legend>
+
+                    <div>
+                        <input type="radio" name="Q2" value="0">
+                        <label for="A2">if (conditional expression is true) thenexecute this codeend if</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Q2" value="0" />
+                        <label for="B2">if (conditional expression is true)execute this codeend if</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Q2" value="10" />
+                        <label for="C2">if (conditional expression is true) {then execute this code>->}</label>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <!--question 3-->
+                    <legend>Is it possible to nest functions in JavaScript?</legend>
+
+                    <div>
+                        <input type="radio" name="Q3" value="10">
+                        <label for="A3">True</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Q3" value="0" />
+                        <label for="B3">False</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Q3" value="0" />
+                        <label for="louie">Maybe</label>
+                    </div>
+
+                </fieldset>
+            </div><!--end of .column 1-->
+        </div>
+
+            <div class="col-md-6">
+                <div class="jumbotron">
+                <fieldset>
+                    <!--question 4-->
+                    <legend>What is mean by "this" keyword in javascript?</legend>
+
+                    <div>
+                        <input type="radio" name="Q4" value="10">
+                        <label for="A4">It refers current object</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Q4" value="0" />
+                        <label for="B4">It referes previous object</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Q4" value="0" />
+                        <label for="C4">It is variable which contains value</label>
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset>
+                    <!--question 5-->
+                    <legend>What is the correct JavaScript syntax to write "Hello World"?</legend>
+
+                    <div>
+                        <input type="radio" name="Q5" value="0">
+                        <label for="A5">System.out.println("Hello World")</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Q5" value="0" />
+                        <label for="B5">println ("Hello World")</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Q5" value="10" />
+                        <label for="C5">document.write("Hello World")</label>
+                    </div>
+
+                </fieldset>
+            
+                <button type="submit" name="button" onclick="return calculate()" ;>Submit Answer</button>
+            </form>
+            <!--end of .form-->
+        </div><!--end of .column 2-->
+    </div>
+            <div class="Report-card">
+                <div id="feedback"> </div>
+                <div id="display"> </div>
+                <div id="opinion"> </div>
+            </div>
+
+
+        </div>
+        <!--end of .row-->
+    </div>
+    <!--end of .container-->
+</body>
+
+
+</html>
