@@ -24,13 +24,13 @@ $(document).ready(function(){
       feedback = "Your score is:";
       $("#display").text(score+"%").fadeIn();
       if (score <= 20) {
-        $("#opinion").append("<img src='images/bad.png' alt='Bad'>");
+        $("#opinion").text("POOR PERFORMANCE").fadeIn();
       } else if (score <= 60) {
-        $("#opinion").append("<img src='images/average.png' alt='Average'>");
+        $("#opinion").text("ROOM FOR IMPROVEMENT").fadeIn();
       } else if (score <= 80) {
-        $("#opinion").append("<img src='images/good.png' alt='Good'>");
+        $("#opinion").text("VERY GOOD").fadeIn();
       } else {
-        $("#opinion").append("<img src='images/excellent.png' alt='Excellent!'>");
+        $("#opinion").append("EXCELLENT WORK").fadeIn();
       }
     }
     else {
