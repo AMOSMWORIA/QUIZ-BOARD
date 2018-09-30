@@ -1,0 +1,8 @@
+.jumbotron {
+    display: inline-block;
+    padding: 5px;
+    color: black;
+    font-family: 'Audiowide', cursive;
+    width: 700px;
+    margin-top: 20px;
+  }
